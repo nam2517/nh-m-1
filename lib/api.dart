@@ -11,7 +11,7 @@ class API {
       var jsonResponse = convert.jsonDecode(response.body);
       return jsonResponse;
     } else {
-      print("Request failed with status: ${response.statusCode}.");
+      print("Request failed with status   : ${response.statusCode}.");
     }
   }
 }
