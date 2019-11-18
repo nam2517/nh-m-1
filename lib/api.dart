@@ -6,6 +6,7 @@ const url = "https://jsonplaceholder.typicode.com/photos";
 
 class API {
   static Future getItems() async {
+    //
     var response = await http.get(url);
     if (response.statusCode == 200) {
       var jsonResponse = convert.jsonDecode(response.body);
